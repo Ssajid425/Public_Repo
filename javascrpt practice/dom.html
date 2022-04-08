@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "cs2">This is banglore</p>
+    <h1 onmouseover = changTo(this)>click me</h1>
+    <h1 id ="t1" onclick = "dispDate()" > Time </h1>
+<button type = "button" onmouseover=document.getElementById("cs2").style.colour="red">Click Here</button>
+<script>
+    function changTo(id){
+        id.style.color = "red";
+        id.style.fontSize = "20px";
+    }
+    function dispDate(){
+        document.getElementById("t1").innerHTML = Date();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="person"></p>
+   <p id="person1"></p>
+   <p id="person2"></p>
+   <p id="person3"></p>
+   <p id="person4"></p>
+   <p id="person5"></p>
+
+
+   <script>
+       const India = {
+           openor1 : "Rohit_Sharma",
+           openor2 : "KL_Rahul",
+           OneDown : "Virat Kohli",
+           Captain : "MS_Dhoni",
+           wecketkeeper : "Rishab_Pant",
+           faster : "Jasprit_Bumrah",
+           spinner : " Kuldeep Yadav",
+           faster2 : "Mohmmed Shami",
+           middleorder : "yuvraj singh",
+
+           mom: function(){
+                return this.openor1 +" and "+ this.openor2 + " are Opening Batsmen"  
+           },
+          // BMIIndex : function(){
+               //return this.height/this.weight;
+           
+
+       };
+      document.getElementById("person").innerHTML = India.wecketkeeper +"  is the wicketkeeper Batsmen   " 
+       document.getElementById("person1").innerHTML = India["OneDown"] +"  is the One down batsmen also Top scorer batsmen "
+       document.getElementById("person2").innerHTML = India.Captain    +"  is one of the most Successful Captain of India"
+       document.getElementById("person3").innerHTML= India.faster2     +"   is the leading Faster Bowler in India"                                            
+       document.getElementById("person4").innerHTML = India.spinner    +"   is the Spinner of India                                      " 
+       document.getElementById("person5").innerHTML = India.mom();
+
+
+   </script>
+</body>
+</html>

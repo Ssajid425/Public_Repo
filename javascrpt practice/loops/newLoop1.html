@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <p id ="demo"></p>
+    <script>
+        const trainee = {week1:25,week2:28,week3:29,week4:30};
+        let avg = 0;
+    
+        for(let i in trainee){
+        avg=trainee.week1+trainee.week2+trainee.week3+trainee.week4/4;
+        }
+        document.getElementById("demo").innerHTML=avg;
+    </script>
+</body>
+</html>

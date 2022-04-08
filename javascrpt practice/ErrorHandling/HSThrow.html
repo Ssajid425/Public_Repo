@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id ="inputbox" type="text">
+    <button type =button" onclick="fetchfunction()">Click me to Test Input</button>
+    <p id = "demo"></p>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <script>
+        function fetchfunction(){
+            let input1=document.getElementById("inputbox").value;
+            
+            
+            try{
+                if(input1=="") throw "no input";
+                if(isNaN(input1)) throw "not a number";
+
+                input1= Number(input1);
+                if(input1<100) {document.getElementById("demo2").innerHTML="The number is below 100";
+            };
+        
+                if(input>100) throw "above 100";
+            }
+            catch(err){
+                document.getElementById("demo").innerHTML=err;
+            }
+            finally{
+                document.getElementById("demo1").innerHTML=input1;
+
+            }
+        }
+        
+    </script>
+</body>
+</html>

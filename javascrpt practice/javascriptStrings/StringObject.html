@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+
+    <script> 
+    let normalstring="Sajid"
+    let stringobject = new String("Sajid")
+    let normalstring1="Sajid"
+    let stringobject1= new String("Sajid")
+    
+    document.getElementById("demo").innerHTML= typeof normalstring + "<br>" + typeof stringobject;
+    document.getElementById("demo1").innerHTML= (normalstring==normalstring1);
+    document.getElementById("demo2").innerHTML= (stringobject==stringobject1);
+</script>
+</body>
+</html>

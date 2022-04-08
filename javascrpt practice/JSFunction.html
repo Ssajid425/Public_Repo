@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <script>
+        function callfunction(num1,num2){
+            return num1*num2;
+        }
+        document.getElementById("demo").innerHTML="call by get element by id: "+ callfunction(10,20)
+        document.write("call by document.write "+callfunction(20,20));
+        console.log(callfunction(50,20));
+        alert("call by normal alert "+callfunction(5,5));
+        window.alert("call by window alert"+ callfunction(8,9));
+    </script>
+</body>
+</html>

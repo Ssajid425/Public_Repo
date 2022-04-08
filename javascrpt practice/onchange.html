@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onchange</title>
+</head>
+<body>
+    <p> Select Graduation you are looking for </p>
+    <select id="selection" onchange="onchangefunction()">
+    <option value="BE"></option>
+    <option value="MCA"></option>
+    <option value="MBA"></option>
+    <option value="BCA"></option>
+
+</select>
+<h1 id = "demo"></h1>
+<p id = "demo1"></h1>
+<p id="demo2" ondblclick="myFunction()">Double click me to change my text color.</p>
+
+<button type = "button" ondblclick="doubleClick()"> history of JavaScript </button>
+<button type = "button" ondblclick="myFunction1()"> click me </button>
+
+<script>
+    function onchangefunction(){
+        var selectedValue=document.getElementById("selection").value;
+        document.getElementById("demo").innerHTML=" Your selection is " +selectedValue;
+    }
+    function doubleClick(){
+        document.getElementById("demo1").innerHTML= "JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser. Mozilla's latest version was 1.8.";
+    }
+    function myFunction() {
+  document.getElementById("demo2").style.color = "red";
+}
+function myFunction1(){
+document.getElementById("demo3").innerHTML= "This is double click" ;
+document.getElementById("demo3").style.background= "red" ;
+}
+</script>
+</body>
+</html>

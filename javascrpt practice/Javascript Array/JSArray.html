@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <p id = "demo5"></p>
+    <p id = "demo6"></p>
+    <p id = "demo7"></p>
+    <p id = "demo8"></p>
+    <p id = "demo9"></p>
+    <p id = "demo10"></p>
+    <p id = "demo11"></p>
+
+    <script>
+        //First way of defining an Array
+        const trainees=["Sajid","Neha","Samiksha","Anup",2000];
+       
+        //Second way of defining an array
+        const FrontendTrainees=[];
+        FrontendTrainees[0]="Sajid";
+        FrontendTrainees[1]="Raj";
+        FrontendTrainees[2]="kamlesh";
+        FrontendTrainees[3]="sid";
+        //array of objects
+        const ArrObject = new Array("Sajid","Pune");
+
+        const TraineeMarks = {TraineeName:"Sajid", week1:25, week2:28,week3:30 }
+        
+        document.getElementById("demo1").innerHTML=trainees;
+        document.getElementById("demo2").innerHTML=FrontendTrainees;
+        document.getElementById("demo3").innerHTML=ArrObject;
+        document.getElementById("demo4").innerHTML=TraineeMarks.TraineeName +"<br>"+ TraineeMarks.week1 +"<br>"+ TraineeMarks.week2 +"<br>"+TraineeMarks.week3; 
+        document.getElementById("demo5").innerHTML=trainees.sort();
+        document.getElementById("demo6").innerHTML=trainees.concat("Anup");
+        document.getElementById("demo7").innerHTML=trainees.join();
+        document.getElementById("demo8").innerHTML=trainees.length(0);
+        document.getElementById("demo9").innerHTML=trainees.findIndex(1);
+    
+    </script>
+</body>
+</html>

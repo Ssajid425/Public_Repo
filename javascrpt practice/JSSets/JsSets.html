@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        const trainee = new Set(["sajid","abishek","ravi","ravi","Ravi"]);
+        const set1 = new Set();
+        set1.add(42);
+        set1.add("fourty two");
+       // set1.clear();
+        const iterator1= set1.values(); 
+
+        trainee.add("arya");
+        trainee.delete("sajid");
+       
+        let display = "";
+        trainee.forEach (function(value) {
+        display += value + "<br>";
+})
+        document.getElementById("demo").innerHTML=trainee.size;
+        document.getElementById("demo1").innerHTML=display;
+        document.getElementById("demo2").innerHTML=trainee.values();
+        document.getElementById("demo3").innerHTML=iterator1.next().value;
+        document.getElementById("demo4").innerHTML=iterator1.next().value;
+
+
+    </script>
+</body>
+</html>

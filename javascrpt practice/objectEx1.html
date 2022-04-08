@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="person"></p>
+   <p id="person1"></p>
+   <p id="person2"></p>
+   <p id="person3"></p>
+   <p id="person4"></p>
+
+
+   <script>
+       const person={
+           firstname : "Sajid",
+           lastname : "Shaikh",
+           age : 22,
+           height : 176,
+           weight : 80,
+           fullname: function(){
+                return this.firstname +"    "+ this.lastname;
+           },
+           BMIIndex : function(){
+               return this.height/this.weight;
+           }
+
+       };
+       document.getElementById("person").innerHTML = person.firstname + " " + person.lastname
+       document.getElementById("person1").innerHTML = person["age"]
+       document.getElementById("person2").innerHTML = person.height
+       document.getElementById("person3").innerHTML=person.fullname();
+       document.getElementById("person4").innerHTML = person.BMIIndex();
+   </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="geolocation()">get geolocation</button>
+    <h1 id ="demo"></h1>
+    <h1 id ="demo1"></h1>
+    <script>
+        function geolocation(){
+            try{
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }catch{
+                document.getElementById("demo").innerHTML=err;
+            }
+        }
+        function showPosition(position){
+            document.getElementById("demo").innerHTML = "Lattitude: "+position.coords.latitude;
+            document.getElementById("demo1").innerHTML = "Longitude: "+position.coords.longitude;
+        }
+    </script>
+</body>
+</html>

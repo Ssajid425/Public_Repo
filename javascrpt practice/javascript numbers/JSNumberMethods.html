@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id ="demo1"></p>
+    <p id ="demo2"></p>
+    <p id ="demo3"></p>
+    <p id ="demo4"></p>
+    <p id ="demo5"></p>
+    <p id ="demo6"></p>
+    <p id ="demo7"></p>
+    <p id ="demo8"></p>
+    <p id ="demo9"></p>
+    <p id ="demo10"></p>
+    <p id ="demo11"></p>
+    
+    
+    <script>
+        let num1=10.909999;
+        let num2=Number.MAX_VALUE;
+        let num3=Number.MIN_VALUE;
+        let num4=Number.POSITIVE_INFINITY;
+        let num5=Number.NEGATIVE_INFINITY;
+        let num6=Number.MAX_SAFE_INTEGER;
+        let num7=Number.MIN_SAFE_INTEGER;
+        document.getElementById("demo").innerHTML=num1.toExponential(2);
+        document.getElementById("demo1").innerHTML=num1.toFixed(2);
+        document.getElementById("demo2").innerHTML=num1.toPrecision(7);
+        document.getElementById("demo3").innerHTML=num1.valueOf();
+        document.getElementById("demo4").innerHTML=Number(true)+"<hr>"+Number(false)+"<hr>"+Number("5")+"<hr>"+Number("10 33");
+        document.getElementById("demo5").innerHTML=parseFloat(10.9999)+"<hr>"+parseInt(100.363);
+        document.getElementById("demo6").innerHTML=num2;
+        document.getElementById("demo7").innerHTML=num3;
+        document.getElementById("demo8").innerHTML=num4;
+        document.getElementById("demo9").innerHTML=num5;
+        document.getElementById("demo10").innerHTML=num6;
+        document.getElementById("demo11").innerHTML=num7;
+
+    </script>
+</body>
+</html>

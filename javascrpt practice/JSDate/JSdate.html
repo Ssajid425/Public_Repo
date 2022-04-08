@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "dispdate"></p>
+    <p id = "demo"></p>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <p id = "demo5"></p>
+    <p id = "demo6"></p>
+    <p id = "demo7"></p>
+    <script>
+        let date1 = new Date();
+        let date2 = new Date(2022,02,28,28,34,105);
+        let date3 = new Date(2022,02);
+        let date4 = new Date(20000000000000);
+        document.getElementById("dispdate").innerHTML= date1;
+        document.getElementById("demo").innerHTML  = date2;
+        document.getElementById("demo1").innerHTML = date3;
+        document.getElementById("demo2").innerHTML = date4;
+        document.getElementById("demo3").innerHTML = date1.getDay();
+        document.getElementById("demo4").innerHTML = date1.getHours();
+        document.getElementById("demo5").innerHTML = date1.getFullYear();
+        document.getElementById("demo6").innerHTML = date1.setFullYear(2021);
+        document.getElementById("demo7").innerHTML = date1.setUTCDate(6);
+
+    </script>
+</body>
+</html>

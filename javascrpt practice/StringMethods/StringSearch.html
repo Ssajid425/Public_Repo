@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <p id ="demo1"></p>
+    <p id ="demo2"></p>
+    <p id ="demo3"></p>
+    <p id ="demo4"></p>
+    <p id ="demo5"></p>
+    <p id ="demo6"></p>
+    <p id = "demo7"></p>
+     <p id ="demo9"></p>
+     <p id ="demo10"></p>
+     <p id ="demo11"></p>
+     <p id ="demo12"></p>
+    <script>
+        let firstname='Sajid';
+        let lastname ='Shaikh';
+        let searchstring=" I am Sajid Sajid Shaikh ";
+        let templatetext = `welcome ${firstname}, ${lastname}` ;
+        document.getElementById("demo").innerHTML=searchstring.indexOf("Sajid");
+        document.getElementById("demo1").innerHTML=searchstring.lastIndexOf("Sajid");
+        document.getElementById("demo3").innerHTML=searchstring.search("Sajid");
+        document.getElementById("demo4").innerHTML=searchstring.search(/Sajid/i);
+        document.getElementById("demo5").innerHTML=searchstring.match(/Sajid/gi);
+        document.getElementById("demo6").innerHTML=searchstring.includes("Sajid");
+        document.getElementById("demo7").innerHTML=searchstring.startsWith("I");
+        //document.getElementById("demo8").innerHTML=searchstring.endsWith("Shaikh");
+        
+        document.getElementById("demo9").innerHTML=templatetext;
+    </script>
+</body>
+</html>

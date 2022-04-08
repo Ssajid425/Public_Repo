@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" ></p>
+    <p id="demo1" ></p>
+    <p id="demo2" ></p>
+    <script>
+        try{
+
+        
+        let i =1.9999999999;
+       // addalert("as");//reference error
+    document.getElementById("demo").innerHTML=i.toPrecision(1111);//range error
+  //  document.getElementById("demo2").innerHTML=eval("sdbhjjsab");
+    //decodeURI("sdsds")
+        }
+        catch(error){
+            document.getElementById("demo").innerHTML= error.name;
+            document.getElementById("demo1").innerHTML = error.message;
+        }   
+   </script>
+</body>
+</html>

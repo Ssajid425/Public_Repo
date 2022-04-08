@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+    <p id = "demo5"></p>
+    <p id = "demo6"></p>
+    <p id = "demo7"></p>
+    <p id = "demo8"></p>
+   
+<script>
+    let string1 = "This is Zensar training "
+    document.getElementById("demo").innerHTML=string1.slice(-11);
+    document.getElementById("demo1").innerHTML=string1.substring(5,8);
+    document.getElementById("demo2").innerHTML=string1.substr(5,8);
+    newstring=string1.replace("Zensar","Wipro");
+    document.getElementById("demo3").innerHTML=string1.replace("Zensar","Wipro");
+    document.getElementById("demo4").innerHTML=string1.replace(/zensar/ig,"Wipro");
+
+    concatstring = string1.concat(" "+ "<br>"+ "Trainer is Preaven ");
+    trimstring=concatstring.trim();
+
+    document.getElementById("demo5").innerHTML=trimstring;
+    document.getElementById("demo6").innerHTML=string1.charAt(5);
+    document.getElementById("demo7").innerHTML=string1.charCodeAt(0);
+
+    const stringarray = string1.split("")
+    document.getElementById("demo8").innerHTML=stringarray[9];
+</script>
+    
+</body>
+</html>
